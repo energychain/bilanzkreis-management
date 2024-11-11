@@ -1,0 +1,43 @@
+{
+  "name": "bilanzkreis-management",
+  "version": "1.0.0",
+  "description": "Bilanzkreis Management System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services/**/*.service.js",
+    "start": "moleculer-runner services",
+    "cli": "moleculer connect NATS",
+    "ci": "jest --watch",
+    "test": "jest --coverage",
+    "lint": "eslint services",
+    "dc:up": "docker-compose up -d",
+    "dc:down": "docker-compose down",
+    "dc:logs": "docker-compose logs -f",
+    "setup:dev": "npm install && docker-compose up -d",
+    "test:integration": "jest tests/integration --runInBand",
+    "test:unit": "jest tests/unit",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moleculer": "^0.14.29",
+    "moleculer-web": "^0.10.6",
+    "moleculer-db": "^0.8.25",
+    "moleculer-db-adapter-mongo": "^0.4.16",
+    "mongodb": "^4.17.1",
+    "mongoose": "^7.6.3",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.6",
+    "mongodb-memory-server": "^9.0.1",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3",
+    "husky": "^8.0.3"
+  }
+}
