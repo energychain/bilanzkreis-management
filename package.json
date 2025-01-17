@@ -27,7 +27,7 @@
     "moleculer-db": "^0.8.25",
     "moleculer-db-adapter-mongo": "^0.4.16",
     "mongodb": "^4.17.1",
-    "mongoose": "^7.6.3",
+    "mongoose": "^8.9.5",
     "dotenv": "^16.3.1",
     "jsonwebtoken": "^9.0.2",
     "bcryptjs": "^2.4.3"
